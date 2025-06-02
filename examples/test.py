@@ -1,4 +1,11 @@
-from grimwalker import display
+import grimwalker as gw
 
-win = display.Window
-win.show()
+gw.init()
+
+
+while gw.running():
+	print(gw.running())
+	gw.displayManager().show_window(gw.displayManager(), window_id="main")
+	for e in gw.event.get_events():
+		if e.type == gw.event.EventType.QUIT:
+			gw.running(False)
