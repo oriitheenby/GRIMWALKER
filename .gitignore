@@ -1,7 +1,3 @@
 grimwalker_engine.sublime-project
 .venv
 examples/__pycache__
-grimwalker/__pycache__
-grimwalker/display/__pycache__
-grimwalker/logic/__pycache__
-grimwalker/util/__pycache__
